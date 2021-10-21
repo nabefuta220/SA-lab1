@@ -1,1 +1,17 @@
 # 統計分析法　第一回レポート
+
+## 準備:データを取得する
+
+## 1 量的データの基本統計量
+
+### task1-1:母集団の分布を確認する
+
+方針: データを取得したファイルから、量的データを取り出し、それぞれの値について、`matplotlib.pyplot`の`hist`でヒストグラムを作成する。
+
+結果:
+
+数学のスコア: ![math](img/math%20score_distribute.png)
+
+読解のスコア　:![read](img/reading%20score_distribute.png)
+
+書きのスコア: ![write](img/writing%20score_distribute.png)
