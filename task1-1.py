@@ -1,8 +1,9 @@
 from matplotlib.pyplot import bar
 import csv
 from src import data_file
-
+from src.getSample import get_data
 
 if __name__=='__main__':
-
-    pass
+    res=get_data()
+    print(res)
+    
