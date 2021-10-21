@@ -8,3 +8,10 @@
 
 方針: データを取得したファイルから、量的データを取り出し、それぞれの値について、`matplotlib.pyplot`の`hist`でヒストグラムを作成する。
 
+結果:
+
+数学のスコア: ![math](img/math%20score_distribute.png)
+
+読解のスコア　:![read](img/reading%20score_distribute.png)
+
+書きのスコア: ![write](img/writing%20score_distribute.png)
