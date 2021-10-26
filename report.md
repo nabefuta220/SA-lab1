@@ -2,6 +2,8 @@
 
 ## 準備:データを取得する
 
+data: [datas](output/data.csv)
+
 ## 1 量的データの基本統計量
 
 ### task1-1:母集団の分布を確認する
@@ -15,3 +17,7 @@
 読解のスコア　:![read](img/reading%20score_distribute.png)
 
 書きのスコア: ![write](img/writing%20score_distribute.png)
+
+### task 2:母集団の基本統計量を調べる
+
+方針：ライブラリをもちいて計算する
