@@ -18,6 +18,7 @@ def get_sample(n:int=1000):
     """
     res=requests.get(f"{URL}&n={n}")
     print(res)
+    print(res.text[:200])
     return res.text
 
 
