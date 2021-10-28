@@ -17,3 +17,4 @@ python_version = "3.9"
 [scripts]
 main = "python3.9 main.py "
 getdata ="python3.9 getData.py"
+modify ="cog -r report.md"

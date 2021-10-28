@@ -20,23 +20,21 @@ data: [datas](output/data.csv)
 
 ### task 2:母集団の基本統計量を調べる
 
-方針：ライブラリをもちいて計算する
+方針：`pandas`のライブラリをもちいて計算する。
 
-<!-- 
+平均は、`mean()`メソッドで、分散は、`var()`メソッドで、標準偏差は`std()`メソッドで、相関係数は`corr()`メソッドでそれぞれ求めることができる
 
-
-
-[[[cog
+<!-- [[[cog
 import cog
 file="output/task1-2.txt"
-cog.outl("\n```text")
+cog.outl("\n```bash")
 with open(file,"r") as f:
     cog.outl(f.read())
 cog.outl("```")
-    ]]]-->
+    ]]] -->
 
-```text
->>pipenv run python3.9 task1-2.py
+```bash
+$pipenv run python3.9 task1-2.py
 mean:
 math score       66.264
 reading score    69.332
@@ -60,3 +58,4 @@ writing score    0.783433       0.949532       1.000000
 
 ```
 <!-- [[[end]]] -->
+
