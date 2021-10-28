@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "196596fb4e792d270a474a3981e3b11493d8f9338905f9d921def7d8a56c5511"
+            "sha256": "9c8bea1f0b659bbbeb2d51961cefa8a9c5314f09c68c6973c7ae215e1d8e939a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,14 @@
             ],
             "markers": "python_version >= '3'",
             "version": "==2.0.7"
+        },
+        "cogapp": {
+            "hashes": [
+                "sha256:7edea278bf85d4fba066020c87d22d39ce4b55bd05933fdee1fba178c28fe4a5",
+                "sha256:c43e374ee5ca2a35fbc68556f598bd8578eabe8a890487980bba56945b5ce9c6"
+            ],
+            "index": "pypi",
+            "version": "==3.1.0"
         },
         "cycler": {
             "hashes": [
@@ -238,11 +246,11 @@
         },
         "pyparsing": {
             "hashes": [
-                "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1",
-                "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"
+                "sha256:9e3511118010f112a4b4b435ae50e1eaa610cda191acb9e421d60cf5fde83455",
+                "sha256:f8d3fe9fc404576c5164f0f0c4e382c96b85265e023c409c43d48f65da9d60d0"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
-            "version": "==2.4.7"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.0.3"
         },
         "python-dateutil": {
             "hashes": [

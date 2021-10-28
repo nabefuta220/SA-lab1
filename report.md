@@ -21,3 +21,42 @@ data: [datas](output/data.csv)
 ### task 2:母集団の基本統計量を調べる
 
 方針：ライブラリをもちいて計算する
+
+<!-- 
+
+
+
+[[[cog
+import cog
+file="output/task1-2.txt"
+cog.outl("\n```text")
+with open(file,"r") as f:
+    cog.outl(f.read())
+cog.outl("```")
+    ]]]-->
+
+```text
+>>pipenv run python3.9 task1-2.py
+mean:
+math score       66.264
+reading score    69.332
+writing score    68.165
+dtype: float64
+var:
+math score       225.746050
+reading score    203.607383
+writing score    222.308083
+dtype: float64
+std:
+math score       15.024848
+reading score    14.269106
+writing score    14.909999
+dtype: float64
+corr:
+               math score  reading score  writing score
+math score       1.000000       0.797156       0.783433
+reading score    0.797156       1.000000       0.949532
+writing score    0.783433       0.949532       1.000000
+
+```
+<!-- [[[end]]] -->
