@@ -12,7 +12,7 @@ if __name__=='__main__':
         fig = plt.figure()
         plt.title(f"{i}")
         plt.hist(data[i])
-        fig.savefig(f"img/{i}_distribute.png")
+        fig.savefig(f"output/{i}_distribute.png")
 
 
    

@@ -12,11 +12,11 @@ data: [datas](output/data.csv)
 
 結果:
 
-数学のスコア: ![math](img/math%20score_distribute.png)
+数学のスコア: ![math](output/math%20score_distribute.png)
 
-読解のスコア　:![read](img/reading%20score_distribute.png)
+読解のスコア　:![read](output/reading%20score_distribute.png)
 
-書きのスコア: ![write](img/writing%20score_distribute.png)
+書きのスコア: ![write](output/writing%20score_distribute.png)
 
 ### task 2:母集団の基本統計量を調べる
 
@@ -36,26 +36,34 @@ cog.outl("```")
 ```bash
 $pipenv run python3.9 task1-2.py
 mean:
-math score       66.264
-reading score    69.332
-writing score    68.165
+math score       66.968
+reading score    69.917
+writing score    68.994
 dtype: float64
 var:
-math score       225.746050
-reading score    203.607383
-writing score    222.308083
+math score       236.621598
+reading score    209.922033
+writing score    233.613578
 dtype: float64
 std:
-math score       15.024848
-reading score    14.269106
-writing score    14.909999
+math score       15.382509
+reading score    14.488686
+writing score    15.284423
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.797156       0.783433
-reading score    0.797156       1.000000       0.949532
-writing score    0.783433       0.949532       1.000000
+math score       1.000000       0.822424       0.808944
+reading score    0.822424       1.000000       0.952980
+writing score    0.808944       0.952980       1.000000
 
 ```
 <!-- [[[end]]] -->
+
+### task 3:母平均の推定
+
+#### サンプルの選ぶ方について
+
+`pandas.sample()`メソッドによって、サンプルを抽出した。
+
+
 
