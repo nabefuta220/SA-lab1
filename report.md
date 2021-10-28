@@ -36,25 +36,25 @@ cog.outl("```")
 ```bash
 $pipenv run python3.9 task1-2.py
 mean:
-math score       66.968
-reading score    69.917
-writing score    68.994
+math score       66.694
+reading score    69.316
+writing score    68.184
 dtype: float64
 var:
-math score       236.621598
-reading score    209.922033
-writing score    233.613578
+math score       224.002366
+reading score    199.457602
+writing score    223.996140
 dtype: float64
 std:
-math score       15.382509
-reading score    14.488686
-writing score    15.284423
+math score       14.966709
+reading score    14.122946
+writing score    14.966501
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.822424       0.808944
-reading score    0.822424       1.000000       0.952980
-writing score    0.808944       0.952980       1.000000
+math score       1.000000       0.807585       0.799522
+reading score    0.807585       1.000000       0.953226
+writing score    0.799522       0.953226       1.000000
 
 ```
 <!-- [[[end]]] -->
