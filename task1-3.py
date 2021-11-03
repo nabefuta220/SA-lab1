@@ -3,7 +3,7 @@ from src.getSample import get_data
 from src.getSmallSample import get_small_sample
 import pandas as pd
 
-def CLT(popuation:pd,samples,sets):
+def CLT(popuation:pd,samples:int,sets:int):
 	"""
 	中心極限定理によって、母集団の平均と標準偏差を推定する
 
@@ -28,7 +28,7 @@ def CLT(popuation:pd,samples,sets):
 	"""
 
 	#すべての平均を取得
-	means=[get_small_sample(samples,popuation,f"output/sample{i}.csv").mean(numeric_only=True) for i in range(sets)]
+	means=[get_small_sample(samples,popuation,f"output/CLT_{i}.csv").mean(numeric_only=True) for i in range(sets)]
 
 	#結合して転置する
 	small_datas=pd.concat(means,axis=1).T
@@ -47,7 +47,8 @@ def CLT(popuation:pd,samples,sets):
 sample_data=10
 if __name__ == "__main__":
 	data=get_data()
-	print(CLT(data,20,10))
+	
+	print(f"CLT:\n{CLT(data,20,10)}")
 
    
 
