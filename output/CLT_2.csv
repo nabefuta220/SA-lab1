@@ -1,21 +1,21 @@
 gender,race/ethnicity,parental level of education,lunch,test preparation course,math score,reading score,writing score
-female,group C,some college,standard,none,48,49,51
-male,group E,some college,free/reduced,completed,56,57,57
-female,group D,associate's degree,standard,completed,73,78,75
-male,group D,some college,standard,none,73,62,60
-female,group C,high school,free/reduced,none,51,67,65
-male,group E,bachelor's degree,standard,none,76,75,72
-male,group E,some high school,free/reduced,none,85,78,75
-male,group D,some high school,free/reduced,none,49,47,41
-male,group D,high school,standard,completed,77,73,73
-male,group D,some high school,standard,none,71,66,59
-female,group D,some high school,standard,none,78,78,83
-male,group C,associate's degree,standard,completed,89,85,84
-female,group D,high school,standard,completed,68,74,79
-female,group E,associate's degree,standard,none,82,77,84
-male,group E,some college,free/reduced,completed,83,80,76
-female,group E,high school,standard,none,82,81,73
-female,group D,master's degree,standard,none,73,78,82
-female,group C,high school,standard,none,56,53,53
-male,group D,some high school,standard,none,52,49,47
-male,group D,some college,standard,none,61,54,51
+male,group C,master's degree,standard,none,85,82,78
+female,group D,some college,standard,none,60,66,63
+female,group D,some college,standard,none,79,80,82
+female,group C,some high school,free/reduced,none,70,77,79
+male,group D,some college,free/reduced,none,80,71,76
+female,group D,some college,free/reduced,completed,60,81,89
+male,group B,some college,standard,none,92,77,76
+male,group D,some college,free/reduced,none,76,78,80
+male,group D,high school,standard,none,89,85,79
+male,group A,some high school,free/reduced,none,48,37,33
+female,group C,some high school,standard,completed,86,92,92
+male,group B,master's degree,standard,none,71,63,68
+male,group D,bachelor's degree,standard,completed,76,81,90
+female,group D,some college,standard,completed,57,73,77
+male,group C,high school,standard,none,61,61,59
+female,group A,some college,standard,none,68,71,75
+male,group A,high school,standard,completed,72,70,65
+female,group C,high school,free/reduced,none,34,56,48
+male,group D,bachelor's degree,free/reduced,none,46,49,53
+female,group C,some college,standard,completed,45,56,65

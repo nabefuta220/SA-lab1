@@ -1,9 +1,6 @@
-
-
 import pandas as pd
 
 from src.getSmallSample import get_small_sample
-
 
 def CLT(popuation:pd,samples:int,sets:int):
 	"""
@@ -38,7 +35,6 @@ def CLT(popuation:pd,samples:int,sets:int):
 	mean=small_datas.mean(numeric_only=True)
 	var=small_datas.var(numeric_only=True,ddof=0)*samples
 	
-
 	res=pd.concat([mean,var],axis=1).T
 	res.index=['ave','var']
 	return res
