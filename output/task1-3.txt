@@ -1,0 +1,7 @@
+$pipenv run python3.9 task1-3.py
+math score       64.4
+reading score    69.8
+writing score    70.3
+dtype: float64
+Index(['math score', 'reading score', 'writing score'], dtype='object')
+None

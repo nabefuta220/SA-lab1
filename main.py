@@ -6,4 +6,5 @@ if __name__=='__main__':
     res=get_data()
     print(res)
     print(get_small_sample(10,res))
+    print(res.dtypes)
     pass
