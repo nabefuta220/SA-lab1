@@ -1,21 +1,21 @@
 gender,race/ethnicity,parental level of education,lunch,test preparation course,math score,reading score,writing score
-male,group D,some high school,standard,completed,84,80,78
-male,group C,associate's degree,standard,none,66,68,64
-male,group D,master's degree,standard,none,61,56,53
-male,group B,some high school,standard,none,68,75,68
-female,group C,some high school,standard,none,61,76,68
-female,group B,some high school,standard,completed,64,76,78
-female,group B,bachelor's degree,free/reduced,none,54,69,68
-male,group D,associate's degree,free/reduced,none,81,74,73
-male,group B,associate's degree,free/reduced,none,68,72,73
-male,group B,bachelor's degree,free/reduced,none,31,28,30
-male,group C,high school,standard,completed,90,81,77
-female,group C,bachelor's degree,standard,none,58,70,66
-female,group E,some high school,standard,none,68,74,70
-female,group C,high school,standard,none,71,80,75
-male,group C,high school,standard,none,61,61,59
-female,group D,some high school,standard,none,65,69,65
-male,group D,bachelor's degree,standard,none,85,87,87
-male,group E,some college,standard,none,67,66,64
-male,group E,bachelor's degree,free/reduced,none,56,47,48
-female,group C,high school,standard,none,74,91,87
+female,group D,associate's degree,free/reduced,completed,82,88,90
+female,group B,associate's degree,standard,none,62,67,68
+female,group C,high school,free/reduced,none,59,70,71
+female,group D,master's degree,standard,completed,78,75,86
+male,group C,some college,standard,none,88,80,83
+female,group D,some high school,standard,completed,81,90,87
+female,group B,associate's degree,standard,none,83,91,93
+male,group B,some college,standard,none,71,70,68
+female,group D,associate's degree,free/reduced,completed,58,69,74
+female,group D,some college,free/reduced,completed,66,73,81
+male,group C,high school,standard,none,59,45,48
+male,group C,high school,standard,none,78,68,68
+female,group C,some high school,free/reduced,none,49,64,55
+female,group E,some high school,standard,completed,54,64,62
+female,group A,some college,standard,completed,76,84,81
+female,group B,some college,standard,completed,20,33,32
+male,group D,associate's degree,free/reduced,none,87,74,78
+male,group D,associate's degree,standard,none,83,73,68
+female,group C,some high school,free/reduced,none,44,56,53
+female,group A,bachelor's degree,free/reduced,completed,57,68,73

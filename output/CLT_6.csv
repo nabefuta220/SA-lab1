@@ -1,21 +1,21 @@
 gender,race/ethnicity,parental level of education,lunch,test preparation course,math score,reading score,writing score
-female,group B,some college,free/reduced,none,31,48,44
-female,group C,master's degree,free/reduced,none,53,58,55
-male,group C,high school,standard,none,74,74,59
-male,group C,some college,standard,completed,67,69,65
-female,group B,high school,free/reduced,none,68,82,76
-female,group D,associate's degree,free/reduced,none,54,64,68
-female,group A,associate's degree,standard,completed,79,83,87
-female,group C,high school,free/reduced,completed,36,52,55
-male,group C,some high school,standard,none,81,85,75
-male,group C,some high school,standard,completed,71,81,74
-female,group C,some high school,standard,none,54,65,60
-female,group C,master's degree,standard,completed,86,100,100
-male,group B,high school,standard,none,76,65,64
-male,group C,high school,free/reduced,completed,26,26,30
-male,group B,bachelor's degree,standard,none,65,62,59
-male,group D,some high school,standard,none,71,66,59
-male,group D,master's degree,free/reduced,completed,65,60,65
-female,group D,high school,standard,completed,60,69,72
-female,group D,some college,free/reduced,completed,76,84,85
-female,group E,some high school,free/reduced,completed,63,63,63
+female,group D,some high school,free/reduced,none,46,67,66
+female,group B,some college,standard,none,55,56,62
+female,group D,some college,standard,none,87,91,89
+female,group B,high school,free/reduced,none,66,74,68
+female,group E,high school,standard,none,89,99,93
+female,group E,high school,standard,none,78,78,73
+male,group B,high school,standard,none,55,41,41
+female,group E,master's degree,free/reduced,completed,88,84,89
+male,group E,bachelor's degree,standard,none,77,61,59
+male,group C,master's degree,standard,none,82,89,80
+female,group E,associate's degree,standard,completed,63,58,60
+male,group C,high school,free/reduced,none,51,52,49
+male,group C,high school,standard,completed,95,100,95
+female,group B,high school,standard,completed,68,77,82
+female,group C,high school,free/reduced,none,51,67,65
+male,group C,associate's degree,standard,none,71,73,65
+male,group B,some college,standard,none,52,53,48
+female,group D,some college,standard,none,65,63,70
+female,group C,some college,standard,completed,80,89,90
+male,group D,high school,standard,completed,54,58,56

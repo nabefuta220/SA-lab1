@@ -8,6 +8,7 @@ requests = "*"
 pandas = "*"
 matplotlib = "*"
 cogapp = "*"
+scipy = "*"
 
 [dev-packages]
 
