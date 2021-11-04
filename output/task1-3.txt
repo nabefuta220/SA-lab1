@@ -1,12 +1,12 @@
-$pipenv run python3 task1-3.py 20 10 0.95
-samples:20, sets:10
+$pipenv run python3 task1-3.py 20 1 0.95
+samples:20, sets:1
 CLT:
      math score  reading score  writing score
-ave     65.9650        68.8450        67.8050
-var    165.8005       115.3845       121.9445
+ave       65.35          70.55          69.35
+var        0.00           0.00           0.00
 
 samples:20, confience_level:0.95
 interval:
       math score  reading score  writing score
-down   60.929069      63.324924      62.140082
-up     73.570931      77.275076      75.859918
+down   54.090344      60.353603      57.624823
+up     69.009656      72.646397      71.775177
