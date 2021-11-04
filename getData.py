@@ -16,4 +16,4 @@ def get_data(samples=1000, data_file=DF):
             pass
 if __name__=='__main__':
     get_data()
-    get_data(samples=50,data_file='src/../hypothesis.csv')
+    get_data(samples=50,data_file='output/hypothesis.csv')
