@@ -26,7 +26,7 @@ def CLT(popuation:pd,samples:int,sets:int):
 	"""
 
 	#すべての平均を取得
-	means=[get_small_sample(samples,popuation,f"output/CLT_{i}.csv").mean(numeric_only=True) for i in range(sets)]
+	means=[get_small_sample(samples,popuation,f"output/CLT/sample_{i}.csv").mean(numeric_only=True) for i in range(sets)]
 
 	#結合して転置する
 	small_datas=pd.concat(means,axis=1).T

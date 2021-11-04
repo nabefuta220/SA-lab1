@@ -1,0 +1,21 @@
+gender,race/ethnicity,parental level of education,lunch,test preparation course,math score,reading score,writing score
+female,group C,master's degree,standard,none,74,95,96
+female,group C,some high school,free/reduced,none,41,57,51
+male,group C,high school,standard,completed,66,69,67
+male,group A,high school,standard,none,59,54,50
+male,group B,some college,standard,completed,76,75,79
+female,group A,associate's degree,standard,completed,79,83,87
+male,group D,master's degree,standard,none,55,53,49
+male,group E,some college,free/reduced,none,67,74,70
+female,group C,some high school,standard,none,49,60,60
+male,group C,high school,standard,none,76,79,70
+female,group D,some college,free/reduced,none,39,45,51
+female,group B,some college,standard,none,52,64,65
+female,group D,high school,free/reduced,completed,78,94,89
+male,group B,some college,free/reduced,none,33,38,30
+female,group D,some high school,standard,completed,58,70,73
+female,group D,some college,standard,completed,70,79,83
+female,group B,some high school,standard,none,59,71,61
+female,group C,some college,free/reduced,completed,51,71,67
+male,group C,associate's degree,standard,none,66,68,64
+male,group D,associate's degree,free/reduced,none,87,74,78
