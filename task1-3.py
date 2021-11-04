@@ -1,11 +1,15 @@
 
+import argparse
+
 from src.CLT import CLT
 from src.getSample import get_data
 from src.intervalEstimation import interval_estimation
 
-import argparse
 
 def input_data():
+	"""
+	コマンドラインから入力を受け取る
+	"""
 	arg=argparse.ArgumentParser()
 	arg.add_argument("samples",help="一度の取得するサンプル数",type=int)
 	arg.add_argument("sets",help="取得する回数",type=int)
