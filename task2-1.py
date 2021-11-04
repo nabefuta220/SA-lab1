@@ -46,8 +46,9 @@ def linked_phothesis(data:pd.DataFrame,index:List[str],significance_level : floa
 
     
 if __name__=='__main__':
-    data=get_data(data_file='output/hypothesis.csv').select_dtypes(include='number')
-    data_column=data.columns
+    data=get_data(data_file='output/hypothesis.csv')
+    data_column=data.select_dtypes(include='number').columns
+    print("linked hyothesis:\n")
     #2科目を抽出する
     for i in range(len(data_column)):
         for j in range(i+1,len(data_column)):
