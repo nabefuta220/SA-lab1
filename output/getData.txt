@@ -1,3 +1,5 @@
-$pipenv run python3.9 getData.py
+$pipenv run python3 getData.py
 <Response [200]>
+"gender","race/ethnicity","parental level of education","lunch","test preparation course","math score","reading score","writing score"
+"female","group B","associate's degree","standard","none","52","4
 data:src/../output/data.csv
