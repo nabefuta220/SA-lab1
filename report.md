@@ -10,6 +10,20 @@
 
 取得したデータ: [datas](output/data.csv)
 
+## 実行環境
+
+python3.9.7
+
+- pipenv
+
+(これ以降のモジュールは`pipenv update`でダウンロードできます)
+
+- requests
+- pandas
+- matplotlib
+- cogapp
+- scipy
+
 ## 1 量的データの基本統計量
 
 ### task1-1:母集団の分布を確認する
