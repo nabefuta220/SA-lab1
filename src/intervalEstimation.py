@@ -1,17 +1,18 @@
+"""区間推定を行う"""
 import pandas as pd
 from scipy import stats
 
 from src.getSmallSample import get_small_sample
 
 
-def interval_estimation(popuation:pd,samples:int,confidence_level:float):
+def interval_estimation(popuation:pd.DataFrame,samples:int,confidence_level:float)->pd.DataFrame:
 	"""
 	区間推定によって、標本平均と信頼度に応じた信頼区間(両側)を計算する
 
 	Parameters
-	----
+	----------
 	
-	popuation : pandas
+	popuation : pandas.Dataframe
 		母集団のデータ
 	
 	samples : int
@@ -19,7 +20,6 @@ def interval_estimation(popuation:pd,samples:int,confidence_level:float):
 	
 	confidence_level:float
 		信頼度
-
 
 	returns
 	------

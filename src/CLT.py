@@ -1,27 +1,24 @@
+"""中心極限定理によって、点推定を行う"""
+
 import pandas as pd
 
 from src.getSmallSample import get_small_sample
 
-def CLT(popuation:pd,samples:int,sets:int):
-	"""
-	中心極限定理によって、母集団の平均と標準偏差を推定する
+def CLT(popuation:pd.DataFrame,samples:int,sets:int)->pd.DataFrame:
+	"""中心極限定理によって、母集団の平均と標準偏差を推定する
 
 	Parameters
-	----
-	
-	popuation : pandas
+    ----------
+	popuation : pandas.Dataframe
 		母集団のデータ
-	
 	samples : int
 		1回で取得する標本数
-	
-	sets:int
+	sets : int
 		サンプルを取得する回数
 
-
-	returns
-	------
-	res: pandas
+	Returns
+	--------
+	res: pandas.Dataframe
 		各量的データと[平均、分散]のデータフレーム
 	"""
 
