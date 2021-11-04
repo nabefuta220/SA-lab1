@@ -26,7 +26,7 @@ python3.9.7
 
 ## 1 量的データの基本統計量
 
-### task1-1:母集団の分布を確認する
+### task 1-1:母集団の分布を確認する
 
 方針: データを取得したファイルから、量的データを取り出し、それぞれの値について、`matplotlib.pyplot`の`hist`でヒストグラムを作成する。
 
@@ -38,7 +38,7 @@ python3.9.7
 
 書きのスコア: ![write](output/writing%20score_distribute.png)
 
-### task 2:母集団の基本統計量を調べる
+### task 1-2:母集団の基本統計量を調べる
 
 `pandas.mean()`メソッドで平均を、`pandas.var(ddof=0)`メソッドで分散を、`pandas.std(ddof=0)`メソッドで標準偏差を、`pandas.corr()`メソッド相関係数をそれぞれ計算した。
 
@@ -79,7 +79,7 @@ writing score    0.811148       0.953334       1.000000
 ```
 <!-- [[[end]]] -->
 
-### task 3:母平均の推定
+### task 1-3:母平均の推定
 
 標本データは`pandas.sample()`メソッドによって、抽出した。
 
