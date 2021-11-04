@@ -36,25 +36,25 @@ cog.outl("```")
 ```bash
 $pipenv run python3 task1-2.py
 mean:
-math score       67.185
-reading score    70.398
-writing score    69.023
+math score       66.125
+reading score    69.696
+writing score    68.340
 dtype: float64
 var:
-math score       234.848775
-reading score    214.631596
-writing score    234.904471
+math score       224.163375
+reading score    220.105584
+writing score    240.182400
 dtype: float64
 std:
-math score       15.324777
-reading score    14.650310
-writing score    15.326594
+math score       14.972087
+reading score    14.835956
+writing score    15.497819
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.826605       0.820362
-reading score    0.826605       1.000000       0.952643
-writing score    0.820362       0.952643       1.000000
+math score       1.000000       0.824112       0.811148
+reading score    0.824112       1.000000       0.953334
+writing score    0.811148       0.953334       1.000000
 
 ```
 <!-- [[[end]]] -->
@@ -67,6 +67,8 @@ writing score    0.820362       0.952643       1.000000
 
 また、区間推定については、`scipy.stats.sem()`メソッドによって標準誤差を算出し、、`scipy.stats.t.interval(alpha,df,loc,scale)`
 によって、信頼度が`alpha`、自由度が`df`,平均が`loc`,標準誤差が`scale`のときの区間の上限と下限を求めた。
+
+今回は、1回で取得する標本数を20、区間推定で標本を取得する数を1回、信頼度を95%にして推定を行った。
 
 推定に使用したファイル:
 
@@ -90,14 +92,14 @@ $pipenv run python3 task1-3.py 20 1 0.95
 samples:20, sets:1
 CLT:
      math score  reading score  writing score
-ave       65.35          70.55          69.35
-var        0.00           0.00           0.00
+ave       63.25          66.25           63.9
+var        0.00           0.00            0.0
 
 samples:20, confience_level:0.95
 interval:
       math score  reading score  writing score
-down   54.090344      60.353603      57.624823
-up     69.009656      72.646397      71.775177
+down   59.313921      67.135722      66.885626
+up     74.086079      80.964278      81.014374
 
 ```
 <!-- [[[end]]] -->
