@@ -33,13 +33,13 @@ def linked_phothesis(data:pd.DataFrame,index:List[str],significance_level : floa
         有意確率の値
     """
     #データを抽出する
-    ndata=data.filter(items=index).diff(axis=1).dropna(axis=1)
+    ndata=data[index].diff(axis=1).dropna(axis=1)
     
     # 1標本の検定を行う
     t,p=stats.ttest_1samp(ndata, 0)
     p=p[0]
-    accept = p >((1- significance_level)/2)
-    print(f"{index[0]} vs {index[1]}: \n p-value : {p} \n -> {'accepted' if accept else 'rejected'}")
+    accept = p >(significance_level/2)
+    print(f"{index[0]} vs {index[1]}: \n t-value : {t[0]} \n p-value : {p} \n -> {'accepted' if accept else 'rejected'}")
 
     return (accept,p)
 
@@ -52,4 +52,4 @@ if __name__=='__main__':
     #2科目を抽出する
     for i in range(len(data_column)):
         for j in range(i+1,len(data_column)):
-            linked_phothesis(data,[data_column[i],data_column[j]],0.95)
+            linked_phothesis(data,[data_column[i],data_column[j]],0.05)
