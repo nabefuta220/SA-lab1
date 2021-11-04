@@ -1,1 +1,1 @@
-$pipenv run python3.9 task1-1.py
+$pipenv run python3 task1-1.py

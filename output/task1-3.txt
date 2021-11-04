@@ -1,7 +1,12 @@
-$pipenv run python3.9 task1-3.py
-math score       64.4
-reading score    69.8
-writing score    70.3
-dtype: float64
-Index(['math score', 'reading score', 'writing score'], dtype='object')
-None
+$pipenv run python3 task1-3.py 20 10 0.95
+samples:20, sets:10
+CLT:
+     math score  reading score  writing score
+ave     65.9650        68.8450        67.8050
+var    165.8005       115.3845       121.9445
+
+samples:20, confience_level:0.95
+interval:
+      math score  reading score  writing score
+down   60.929069      63.324924      62.140082
+up     73.570931      77.275076      75.859918
