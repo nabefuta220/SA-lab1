@@ -1,16 +1,18 @@
-import csv
-import requests
-
-URL='http://roycekimmons.com/system/generate_data.php?dataset=exams&n=1000'
-write_file='data.csv'
-
-if __name__=='__main__':
-    res=requests.get(URL)
-    print(res)
+import pandas
+from src import data_file as DF
+from src.getSample import get_sample
+from src.writeFile import write_file
+def get_data(samples=1000, data_file=DF):
+    """
+    データをcsvファイルに書き込む
+    """
+    datas=get_sample(samples).replace("\"",'',-1)
+    #datas.pop()#最後の改行を取り除く
+    print("data:"+data_file)
     
-    datas=res.text.replace("\"",'',-1).split("\n")
-    datas.pop()#最後の改行を取り除く
-    with open (write_file,'w') as f:
-        writer = csv.writer(f)
+    with open(DF ,"w") as f:
         for data in datas:
-            writer.writerow(data.split(','))
+            f.write(data)
+            pass
+if __name__=='__main__':
+    get_data()
