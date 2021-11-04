@@ -1,5 +1,5 @@
 """URLからn個分のデータを取得する"""
-from . import URL,data_file
+from . import URL,data_file as DF
 import pandas as pd
 import requests
 def get_sample(n:int=1000):
@@ -18,10 +18,11 @@ def get_sample(n:int=1000):
     """
     res=requests.get(f"{URL}&n={n}")
     print(res)
+    print(res.text[:200])
     return res.text
 
 
-def get_data()->pd:
+def get_data(data_file=DF):
     """
     データファイルからpandasファイルに変換する
     """
