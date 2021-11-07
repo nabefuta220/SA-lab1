@@ -1,15 +1,5 @@
 # 統計分析法　第一回レポート
 
-## 準備:データを取得する
-
-演習データは、`requests.get()`メソッドによって取得した。
-
-そのときに、URLの末端の`n=1000`の部分を変更することで取得する標本数を変更できるため、関数の引数で取得する標本数を変更できるようにした。
-
-また、そのときに返されるデータには、値がダブルクォートで囲まれているため、`replace()`メソッドでダブルフォートを削除し、加工がしやすいように、csvファイルにまとめた。
-
-取得したデータ: [datas](output/data.csv)
-
 ## 実行環境
 
 python3.9.7
@@ -24,17 +14,27 @@ python3.9.7
 - cogapp
 - scipy
 
+## 準備:データを取得する
+
+演習データは、`requests.get()`メソッドによって取得した。
+
+そのときに、URLの末端の`n=1000`の部分を変更することで取得する標本数を変更できるため、関数の引数で取得する標本数を変更できるようにした。
+
+また、そのときに返されるデータには、値がダブルクォートで囲まれているため、`replace()`メソッドでダブルフォートを削除し、加工がしやすいように、csvファイルにまとめた。
+
+[取得したデータ](output/data.csv)
+
 ## 1 量的データの基本統計量
 
 ### task 1-1:母集団の分布を確認する
 
 方針: データを取得したファイルから、量的データを取り出し、それぞれの値について、`matplotlib.pyplot`の`hist`でヒストグラムを作成する。
 
-結果:
+##### 実行結果
 
 数学のスコア: ![math](output/math%20score_distribute.png)
 
-読解のスコア　:![read](output/reading%20score_distribute.png)
+読みのスコア　:![read](output/reading%20score_distribute.png)
 
 書きのスコア: ![write](output/writing%20score_distribute.png)
 
@@ -42,7 +42,7 @@ python3.9.7
 
 `pandas.mean()`メソッドで平均を、`pandas.var(ddof=0)`メソッドで分散を、`pandas.std(ddof=0)`メソッドで標準偏差を、`pandas.corr()`メソッド相関係数をそれぞれ計算した。
 
-結果:
+##### 実行結果
 
 <!-- [[[cog
 import cog
@@ -54,38 +54,38 @@ cog.outl("```")
     ]]] -->
 
 ```bash
-$pipenv run python3 task1-2.py
+$ pipenv run python3 task1-2.py
 mean:
-math score       66.125
-reading score    69.696
-writing score    68.340
+math score       67.477
+reading score    70.706
+writing score    69.665
 dtype: float64
 var:
-math score       224.163375
-reading score    220.105584
-writing score    240.182400
+math score       228.719471
+reading score    206.379564
+writing score    228.602775
 dtype: float64
 std:
-math score       14.972087
-reading score    14.835956
-writing score    15.497819
+math score       15.123474
+reading score    14.365917
+writing score    15.119616
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.824112       0.811148
-reading score    0.824112       1.000000       0.953334
-writing score    0.811148       0.953334       1.000000
+math score       1.000000       0.813027       0.802820
+reading score    0.813027       1.000000       0.948475
+writing score    0.802820       0.948475       1.000000
 
 ```
 <!-- [[[end]]] -->
 
 ### task 1-3:母平均の推定
 
-標本データは`pandas.sample()`メソッドによって、抽出した。
+標本データの抽出は`pandas.sample()`メソッドによって行った。
 
 #### 点推定
 
-中心極限定理によって推測し、(サンプル数を取得する回数を1とするとそのまま点推定になる)標本平均の平均、標本平均の分散はそれぞれ`pandas.mean()`、`pandas.var(ddof=0)`メソッドによって行った。
+中心極限定理によって推測し、(サンプル数を取得する回数を1とするとそのまま点推定になる)標本平均の平均、標本平均の分散はそれぞれ`pandas.mean()`、`pandas.var(ddof=0)`メソッドによって取得した。
 
 #### 区間推定
 
@@ -94,13 +94,9 @@ writing score    0.811148       0.953334       1.000000
 
 今回は、1回で取得する標本数を20、区間推定で標本を取得する数を1回、信頼度を95%にして推定を行った。
 
-推定に使用したファイル:
+推定に使用したファイル: [点推定](output/CLT) [区間推定](output/IE.csv)
 
-[点推定](output/CLT)
-
-[区間推定](output/IE.csv)
-
-結果:
+##### 実行結果
 
 <!-- [[[cog
 import cog
@@ -112,18 +108,18 @@ cog.outl("```")
     ]]] -->
 
 ```bash
-$pipenv run python3 task1-3.py 20 1 0.95
+$ pipenv run python3 task1-3.py 20 1 0.95
 samples:20, sets:1
 CLT:
      math score  reading score  writing score
-ave       63.25          66.25           63.9
-var        0.00           0.00            0.0
+ave        69.5           73.6          73.25
+var         0.0            0.0           0.00
 
 samples:20, confience_level:0.95
 interval:
       math score  reading score  writing score
-down   59.313921      67.135722      66.885626
-up     74.086079      80.964278      81.014374
+down   53.207854      60.599074       58.98058
+up     67.292146      73.700926       72.21942
 
 ```
 <!-- [[[end]]] -->
@@ -132,11 +128,9 @@ up     74.086079      80.964278      81.014374
 
 ### 今回使うデータについて
 
-今回は、`## 準備:データを取得する`のデータを取得する数を引数で指定できることを活かして、`##1`とは別の50個のデータを標本として使用した。
+今回は、[準備:データを取得する](#準備データを取得する)のデータを取得する数を引数で指定できることを活かして、 [1 量的データの基本統計量](#1-量的データの基本統計量)とは別の50個のデータを標本として使用した。
 
-検定に使用した標本
-
-[仮説検定](output/hypothesis.csv)
+[検定に使用した標本](output/hypothesis.csv)
 
 ### task 2-1:質的データの検定
 
@@ -162,7 +156,7 @@ up     74.086079      80.964278      81.014374
 
 また、有意確率の計算については、調べたい変数を抽出したあと、`scipy.stats.ttest_ind()`メソッドによって行った。
 
-結果:
+##### 実行結果
 
 <!-- [[[cog
 import cog
@@ -174,45 +168,44 @@ cog.outl("```")
     ]]] -->
 
 ```bash
-$pipenv run python3 task2-1.py
+$ pipenv run python3 task2-1.py
 linked hyothesis:
 
 math score vs reading score: 
- t-value : -1.7608103862858517 
- p-value : 0.08451037527725584 
- -> accepted
+ t-value : -3.7744334476190105 
+ p-value : 0.0004336324732439187 
+ -> rejected
 math score vs writing score: 
- t-value : -1.2739378465778306 
- p-value : 0.2086949194755527 
- -> accepted
+ t-value : -2.564351071600227 
+ p-value : 0.01345290292047778 
+ -> rejected
 reading score vs writing score: 
- t-value : 0.7587842494663274 
- p-value : 0.45161626129468035 
+ t-value : 1.3427871915534026 
+ p-value : 0.1855283477979288 
  -> accepted
 unlinked hyothesis:
 
-['female' 'male']
 female vs male:
 
 (math score):
- t-value : -0.91697562022924
- p-value : 0.3637398641045435 
--> accepted 
+ t-value : -2.301306099865485
+ p-value : 0.02575930728902603 
+-> rejected 
 (reading score):
- t-value : 2.265435460829317
- p-value : 0.028036093614298416 
--> rejected 
+ t-value : 0.270894089323193
+ p-value : 0.787634029643048 
+-> accepted 
 (writing score):
- t-value : 2.810455251081373
- p-value : 0.007139682124466801 
--> rejected 
+ t-value : 0.653492759874751
+ p-value : 0.5165570517984135 
+-> accepted 
 
 ```
 <!-- [[[end]]] -->
 
-全学生の科目平均の差については、いずれも帰無仮説が採択されたことより、科目平均の差の意味はあるとは言えない。
+全学生の科目平均の差については、読みと書きのスコアについては帰無仮説が採択されたが、数学と読み、数学と書きのスコアについては帰無仮説が却下されたことより、読みと書きとの間の平均の差については違いがあるとは言えないが、数学と読み、数学と書きとの間の平均の差については、t値がどちらも負であることから数学は読みや書きよりも有意に平均点が高いと言える。
 
-一方で、男女別の科目平均の差については、数学については帰無仮説が採択されたが、読みと書きについては帰無仮説が棄却されたことより、数学については男女別の平均の差に意味があるとは言えないが、読みと書きについては、(t値が正であったことから、)男子のほうが有意に高い理由があると言える。
+一方で、男女別の科目平均の差については、数学については帰無仮説が棄却されたが、読みと書きについては帰無仮説が採択されたことより、数学についてはt値が負であったことから女子のほうが有意に高いと言えるが、読みと書きについては男女別の平均の差に意味があるとは言えない。
 
 ### task2-2 : 名義データについて、関係があるかを検定する
 
@@ -224,9 +217,7 @@ female vs male:
 
 また、有意確率の計算については、調べたい変数を`pandas.crosstab()`メソッドを用いて、クロス表を作った後、`scipy.stats.chi2_contingency()`で行った。
 
-結果:
-
-
+##### 実行結果
 
 <!-- [[[cog
 import cog
@@ -238,22 +229,21 @@ cog.outl("```")
     ]]] -->
 
 ```bash
-$pipenv run python3 task2-2.py
+$ pipenv run python3 task2-2.py
 race/ethnicity & parental level of education:
-chi_vale : 16.423510021724308 
-prob : 0.690027307326479
+chi_vale : 21.63720538720539 
+prob : 0.36051681812077707
 ->accepted
 race/ethnicity & lunch:
-chi_vale : 0.29821621502436446 
-prob : 0.989929030562782
+chi_vale : 1.630273321449792 
+prob : 0.8033410778961504
 ->accepted
 parental level of education & lunch:
-chi_vale : 2.1156074636550017 
-prob : 0.8329283836096201
+chi_vale : 1.69160409802121 
+prob : 0.889955797846352
 ->accepted
 
 ```
 <!-- [[[end]]] -->
 
-いずれの変数間において、帰無仮説が採択されたことより、どの変数も関わりがないと言える。
-
+いずれの変数間において、帰無仮説が採択されたことより、どの変数も他の変数と関係があるとは言えない。

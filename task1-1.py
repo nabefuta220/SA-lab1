@@ -12,4 +12,3 @@ if __name__=='__main__':
         plt.title(f"{i}")
         plt.hist(data[i])
         fig.savefig(f"output/{i}_distribute.png")
-

@@ -3,6 +3,7 @@
 """
 
 from typing import List
+
 import pandas as pd
 from scipy import stats
 
@@ -12,11 +13,11 @@ def test_contingency(data:pd.DataFrame,index:List[str],significance_level : floa
 
     Paramters
     ---------
-    data:pandas.DataFrame
+    data : pandas.DataFrame
         検定を行う標本
     index: [str,str]
         関係があるか調べたい変数
-    significance_level :float
+    significance_level : float
         有意水準
 
     Returns

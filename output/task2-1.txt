@@ -1,32 +1,31 @@
-$pipenv run python3 task2-1.py
+$ pipenv run python3 task2-1.py
 linked hyothesis:
 
 math score vs reading score: 
- t-value : -1.7608103862858517 
- p-value : 0.08451037527725584 
- -> accepted
+ t-value : -3.7744334476190105 
+ p-value : 0.0004336324732439187 
+ -> rejected
 math score vs writing score: 
- t-value : -1.2739378465778306 
- p-value : 0.2086949194755527 
- -> accepted
+ t-value : -2.564351071600227 
+ p-value : 0.01345290292047778 
+ -> rejected
 reading score vs writing score: 
- t-value : 0.7587842494663274 
- p-value : 0.45161626129468035 
+ t-value : 1.3427871915534026 
+ p-value : 0.1855283477979288 
  -> accepted
 unlinked hyothesis:
 
-['female' 'male']
 female vs male:
 
 (math score):
- t-value : -0.91697562022924
- p-value : 0.3637398641045435 
--> accepted 
+ t-value : -2.301306099865485
+ p-value : 0.02575930728902603 
+-> rejected 
 (reading score):
- t-value : 2.265435460829317
- p-value : 0.028036093614298416 
--> rejected 
+ t-value : 0.270894089323193
+ p-value : 0.787634029643048 
+-> accepted 
 (writing score):
- t-value : 2.810455251081373
- p-value : 0.007139682124466801 
--> rejected 
+ t-value : 0.653492759874751
+ p-value : 0.5165570517984135 
+-> accepted 

@@ -1,11 +1,14 @@
-"""中心極限定理によって、点推定を行う"""
-
+"""
+中心極限定理によって、点推定を行う
+"""
 import pandas as pd
 
 from src.getSmallSample import get_small_sample
 
+
 def CLT(popuation:pd.DataFrame,samples:int,sets:int)->pd.DataFrame:
-	"""中心極限定理によって、母集団の平均と標準偏差を推定する
+	"""
+	中心極限定理によって、母集団の平均と標準偏差を推定する
 
 	Parameters
     ----------
