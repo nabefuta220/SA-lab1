@@ -42,7 +42,7 @@ def linked_phothesis(data:pd.DataFrame,index:List[str],significance_level : floa
 
     return (accept,t)
 
-def unlinked_phothesis(data:pd.DataFrame,varable: str,index:List[str],significance_level : float)->Tuple[bool,float]:
+def unlinked_phothesis(data:pd.DataFrame,varable: str,index:List[str],significance_level : float)->pd.DataFrame:
     """
     対応がないデータについて、両側検定によって、2つのグループのデータに差があるか判定する
 
