@@ -1,4 +1,6 @@
-"""区間推定を行う"""
+"""
+区間推定を行う
+"""
 import pandas as pd
 from scipy import stats
 
@@ -11,16 +13,12 @@ def interval_estimation(popuation:pd.DataFrame,samples:int,confidence_level:floa
 
 	Parameters
 	----------
-	
 	popuation : pandas.Dataframe
 		母集団のデータ
-	
 	samples : int
 		1回で取得する標本数
-	
 	confidence_level:float
 		信頼度
-
 	returns
 	------
 	res: pandas
@@ -42,4 +40,3 @@ def interval_estimation(popuation:pd.DataFrame,samples:int,confidence_level:floa
 	res.columns=ave.index
 
 	return res
-	

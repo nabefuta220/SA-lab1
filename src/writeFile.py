@@ -1,7 +1,6 @@
 """
 データをcsvファイルに書き込む
 """
-import csv
 import os
 
 import pandas as pd

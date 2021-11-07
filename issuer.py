@@ -1,6 +1,8 @@
-import subprocess
 import argparse
 import os
+import subprocess
+
+
 def inputer():
     arg=argparse.ArgumentParser()
     arg.add_argument('command',nargs='*')
