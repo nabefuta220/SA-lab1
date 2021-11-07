@@ -10,9 +10,10 @@ def get_data(samples=1000, data_file=DF):
     #datas.pop()#最後の改行を取り除く
     print("data:"+data_file)
     
-    with open(DF ,"w") as f:
+    with open(data_file ,"w") as f:
         for data in datas:
             f.write(data)
             pass
 if __name__=='__main__':
     get_data()
+    get_data(samples=50,data_file='output/hypothesis.csv')
