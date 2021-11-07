@@ -1,9 +1,6 @@
 from typing import List, Tuple
 
-import numpy as np
-from numpy.core.fromnumeric import var
 import pandas as pd
-from pandas.io.pytables import Term
 from scipy import stats
 
 from src.getSample import get_data
@@ -28,8 +25,8 @@ def linked_phothesis(data:pd.DataFrame,index:List[str],significance_level : floa
     ------
     accepted: bool
         2つの量的データに差があるか
-        True ならば2つの量的データに差がないとはいえない
-        Falseならば2つの量的データに差がないと言える
+        True ならば2つの量的データに差があるとはいえない
+        Falseならば2つの量的データに差があると言える
     prob: float
         t-統計量
     """
@@ -68,8 +65,8 @@ def unlinked_phothesis(data:pd.DataFrame,varable: str,index:List[str],significan
 
         accepted: bool
             2つの量的データに差があるか
-            Trueならば 2つの量的データに差がないとはいえない
-            Falseならば2つの量的データに差がないと言える
+            Trueならば 2つの量的データに差があるとはいえない
+            Falseならば2つの量的データに差があると言える
         prob: float
             t-統計量
 
@@ -118,10 +115,10 @@ if __name__=='__main__':
 
     #対応なしの仮説検定
     print("unlinked hyothesis:\n")
-    #親の出身校でグループ分けする
-    data_column=data['parental level of education'].unique()
-    print(data_column)
+    #性別でグループ分けする
+    target='gender'
+    data_column=data[target].unique()
     #2群を抽出する
     for i in range(len(data_column)):
         for j in range(i+1,len(data_column)):
-            unlinked_phothesis(data,'parental level of education',[data_column[i],data_column[j]],0.05)
+            unlinked_phothesis(data,target,[data_column[i],data_column[j]],0.05)
