@@ -56,25 +56,25 @@ cog.outl("```")
 ```bash
 $pipenv run python3 task1-2.py
 mean:
-math score       66.125
-reading score    69.696
-writing score    68.340
+math score       66.370
+reading score    69.140
+writing score    67.971
 dtype: float64
 var:
-math score       224.163375
-reading score    220.105584
-writing score    240.182400
+math score       223.635100
+reading score    206.810400
+writing score    229.700159
 dtype: float64
 std:
-math score       14.972087
-reading score    14.835956
-writing score    15.497819
+math score       14.954434
+reading score    14.380904
+writing score    15.155862
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.824112       0.811148
-reading score    0.824112       1.000000       0.953334
-writing score    0.811148       0.953334       1.000000
+math score       1.000000       0.819439       0.808369
+reading score    0.819439       1.000000       0.953587
+writing score    0.808369       0.953587       1.000000
 
 ```
 <!-- [[[end]]] -->
@@ -116,14 +116,14 @@ $pipenv run python3 task1-3.py 20 1 0.95
 samples:20, sets:1
 CLT:
      math score  reading score  writing score
-ave       63.25          66.25           63.9
-var        0.00           0.00            0.0
+ave       64.45           70.2          67.75
+var        0.00            0.0           0.00
 
 samples:20, confience_level:0.95
 interval:
       math score  reading score  writing score
-down   59.313921      67.135722      66.885626
-up     74.086079      80.964278      81.014374
+down   54.894649      62.206433      61.565923
+up     73.405351      76.493567      76.234077
 
 ```
 <!-- [[[end]]] -->
@@ -178,33 +178,32 @@ $pipenv run python3 task2-1.py
 linked hyothesis:
 
 math score vs reading score: 
- t-value : -1.7608103862858517 
- p-value : 0.08451037527725584 
- -> accepted
+ t-value : -2.0986679351656807 
+ p-value : 0.04102287701667518 
+ -> rejected
 math score vs writing score: 
- t-value : -1.2739378465778306 
- p-value : 0.2086949194755527 
+ t-value : -1.039465438348753 
+ p-value : 0.3036904539103783 
  -> accepted
 reading score vs writing score: 
- t-value : 0.7587842494663274 
- p-value : 0.45161626129468035 
+ t-value : 1.5784566588059403 
+ p-value : 0.1208954335113067 
  -> accepted
 unlinked hyothesis:
 
-['female' 'male']
 female vs male:
 
 (math score):
- t-value : -0.91697562022924
- p-value : 0.3637398641045435 
+ t-value : -1.2200294698898513
+ p-value : 0.2284141602808465 
 -> accepted 
 (reading score):
- t-value : 2.265435460829317
- p-value : 0.028036093614298416 
--> rejected 
+ t-value : 1.9636038277180008
+ p-value : 0.055382854485705596 
+-> accepted 
 (writing score):
- t-value : 2.810455251081373
- p-value : 0.007139682124466801 
+ t-value : 2.3037724958752297
+ p-value : 0.02560899365368099 
 -> rejected 
 
 ```
@@ -240,16 +239,16 @@ cog.outl("```")
 ```bash
 $pipenv run python3 task2-2.py
 race/ethnicity & parental level of education:
-chi_vale : 16.423510021724308 
-prob : 0.690027307326479
+chi_vale : 31.036255411255414 
+prob : 0.0547136411190392
 ->accepted
 race/ethnicity & lunch:
-chi_vale : 0.29821621502436446 
-prob : 0.989929030562782
+chi_vale : 6.969246031746032 
+prob : 0.13752238455980245
 ->accepted
 parental level of education & lunch:
-chi_vale : 2.1156074636550017 
-prob : 0.8329283836096201
+chi_vale : 2.519991582491582 
+prob : 0.7734813354390694
 ->accepted
 
 ```

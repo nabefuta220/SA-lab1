@@ -1,13 +1,13 @@
 $pipenv run python3 task2-2.py
 race/ethnicity & parental level of education:
-chi_vale : 16.423510021724308 
-prob : 0.690027307326479
+chi_vale : 31.036255411255414 
+prob : 0.0547136411190392
 ->accepted
 race/ethnicity & lunch:
-chi_vale : 0.29821621502436446 
-prob : 0.989929030562782
+chi_vale : 6.969246031746032 
+prob : 0.13752238455980245
 ->accepted
 parental level of education & lunch:
-chi_vale : 2.1156074636550017 
-prob : 0.8329283836096201
+chi_vale : 2.519991582491582 
+prob : 0.7734813354390694
 ->accepted
