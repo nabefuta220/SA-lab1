@@ -1,6 +1,10 @@
 """
 検定を行う
 """
+from typing import List, Tuple
+
+import pandas as pd
+from scipy import stats
 
 
 def linked_phothesis(data:pd.DataFrame,index:List[str],significance_level : float)->Tuple[bool,float]:
