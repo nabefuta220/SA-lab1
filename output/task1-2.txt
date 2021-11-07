@@ -1,21 +1,21 @@
-$pipenv run python3 task1-2.py
+$ pipenv run python3 task1-2.py
 mean:
-math score       66.370
-reading score    69.140
-writing score    67.971
+math score       67.477
+reading score    70.706
+writing score    69.665
 dtype: float64
 var:
-math score       223.635100
-reading score    206.810400
-writing score    229.700159
+math score       228.719471
+reading score    206.379564
+writing score    228.602775
 dtype: float64
 std:
-math score       14.954434
-reading score    14.380904
-writing score    15.155862
+math score       15.123474
+reading score    14.365917
+writing score    15.119616
 dtype: float64
 corr:
                math score  reading score  writing score
-math score       1.000000       0.819439       0.808369
-reading score    0.819439       1.000000       0.953587
-writing score    0.808369       0.953587       1.000000
+math score       1.000000       0.813027       0.802820
+reading score    0.813027       1.000000       0.948475
+writing score    0.802820       0.948475       1.000000
